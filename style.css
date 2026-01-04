@@ -1,0 +1,82 @@
+/* GLOBAL */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* NAVBAR */
+.navbar-gradient {
+  background: linear-gradient(90deg, #ffb6c1, #ffc0cb);
+}
+
+.nav-pills .nav-link {
+  color: #333;
+  font-weight: 500;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #000;
+  color: #fff;
+}
+
+/* ===== EFEK HOVER GAMBAR ===== */
+.hero-img,
+.buku-img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Saat kursor ke hero image */
+.hero-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* Saat kursor ke gambar buku */
+.card:hover .buku-img {
+  transform: scale(1.1);
+}
+
+/* Card ikut naik sedikit */
+.card {
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+
+/* SECTION */
+.section-card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+}
+
+/* HERO IMAGE */
+.hero-img {
+  max-height: 320px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* PROFILE IMAGE */
+.profile-img {
+  max-height: 260px;
+  width: 80%;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+/* CARD BUKU */
+.buku-img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* FOOTER */
+footer {
+  font-size: 14px;
+}
